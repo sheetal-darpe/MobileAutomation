@@ -12,7 +12,7 @@ import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 
 public class Base {
-	
+	// AndroidDriver
 	public static AndroidDriver  driver;
   
 	@Test
