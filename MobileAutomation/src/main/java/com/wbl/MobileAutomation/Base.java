@@ -3,7 +3,7 @@ package com.wbl.MobileAutomation;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
-
+ 
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Test;
 
@@ -11,9 +11,9 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-public class App {
+public class Base {
 	
-	public static AndroidDriver driver;
+	public static AndroidDriver  driver;
   
 	@Test
 	public void testApp() throws MalformedURLException {
@@ -30,6 +30,7 @@ public class App {
 		dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY,"");   //open home page 
 		
 		driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"),dc);
+		
 	 
 
 	}
